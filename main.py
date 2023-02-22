@@ -47,3 +47,21 @@ from functools import reduce
 
 
 #--------------
+# print(math.log(4, 2))
+# p= []
+# l = 0
+# count = 3
+# for i in range(count):
+#   p.append(float(input()))
+# for i in range(len(p)):
+#     l += p[i]*math.log(p[i], 2)
+#
+# print(-(round(l, 4)))
+
+num = 0.1
+while num <= 0.3:
+    num+=0.1
+    print(num)
+
+num = round(num,1)
+print(num)
