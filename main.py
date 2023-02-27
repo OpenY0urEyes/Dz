@@ -1,67 +1,50 @@
-# a = 4
-# b = 6
-#
-# one = (a - b) * (a + b)
-# print(one)
-# one = a**2 - 2*a*b +b**2
-# print(one)
-# one = a**2+2*a*b+b**2
-# print(one)
-# one = a**3-3*a**2*b+3*a*b**2-b**3
-# print(one)
-# one = a**3 + 3 * a**2 * b + 3 * a * b**2 - b**3
-# print(one)
-# one = (a + b)*(a**2 - a*b + b**2)
-# print(one)
-# one = (a - b)*(a**2 - a*b + b**2)
-# print(one)
 import math
-from functools import reduce
-
-#---------------
-
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+#
+a = int(input("a = "))
+b = int(input("b = "))
+c = int(input("c = "))
 
 #
-# a = 3
-# b = 4
-# c = 5
+# d = b**2 - 4*a*c
+# print(math.sqrt(d))
 #
-# f1 = a*a
-# f2 = a+c
-# f3 = f2 ** 2
-# g1 = f1 + f3
-# print("g1: ", g1)
-# h1 = 10*b
-# h2 = g1 / h1
-#
-# j1 = c ^ 2
-# j2 = a*j1
-# j3 = 4 * j2
-#
-# k1 = h2 - j3
-# print( k1)
-#
-# er = -1/2
-# finish = k1**er
-# print(finish)
+# if d < 0:
+#     print("Нет корней")
+# elif d == 0:
+#     x = -(b/2*a)
+#     print("x = ", x)
+# else:
+#     x_1 = (-b + math.sqrt(d))/(2*a)
+#     x_2 = (-b - math.sqrt(d))/(2*a)
+#     print("Первый X = ",x_1)
+#     print("Второй X = ",x_2)
+"""
+x = []
+y = []
+count = int(input("введите количество x"))
+for i in range(0, count):
+    x.append(float(input()))
 
+print(x)
+for i in range(len(x)):
+    y.append(((a*x[i])**2) + (b*x[i]) + c)
 
-#--------------
-# print(math.log(4, 2))
-# p= []
-# l = 0
-# count = 3
-# for i in range(count):
-#   p.append(float(input()))
-# for i in range(len(p)):
-#     l += p[i]*math.log(p[i], 2)
-#
-# print(-(round(l, 4)))
+print("y = ", y)
 
-num = 0.1
-while num <= 0.3:
-    num+=0.1
-    print(num)
+fig, ax = plt.subplots()  # Create a figure containing a single axes.
+ax.plot(x, [1, 4, 2, 3])  # Plot some data on the axes.
 
-num = round(num,1)
-print(num)
+plt.show()"""
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-10, 10, 1000)
+y = x**2 + 2*x + 2
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+plt.show()
