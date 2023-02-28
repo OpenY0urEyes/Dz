@@ -34,8 +34,8 @@ for i in range(len(x)):
 
 print("y = ", y)
 
-fig, ax = plt.subplots()  # Create a figure containing a single axes.
-ax.plot(x, [1, 4, 2, 3])  # Plot some data on the axes.
+fig, ax = plt.subplots() 
+ax.plot(x, [1, 4, 2, 3]) 
 
 plt.show()"""
 
