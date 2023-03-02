@@ -8,8 +8,6 @@ num = firstNumber
 
 #------Arifm------
 if ArifmOrGeom == 0:
-
-<<<<<<< HEAD
     if FormulaOrCicle == 0:
             #---Formula---
         while firstNumber < lastNumber:
